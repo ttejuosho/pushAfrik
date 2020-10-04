@@ -107,5 +107,22 @@ $(function () {
   $this = $("#sendMessageButton");
   $this.click(() => {
     $("#contactForm").submit();
+    $("#contactForm").on("submit", () => {
+      $("#success").html("<div class='alert alert-success'>");
+      $("#success > .alert-success")
+        .html(
+          "<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;"
+        )
+        .append("</button>");
+      $("#success > .alert-success").append(
+        "<strong>Your message has been sent. </strong>"
+      );
+      $("#success > .alert-success").append("</div>");
+      //clear all fields
+      $("#contactForm").trigger("reset");
+      setTimeout(function () {
+        $this.prop("disabled", false); // Re-enable submit button when AJAX call is complete
+      }, 1000);
+    });
   });
 });
