@@ -236,7 +236,9 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
-            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <form id="contactForm" action="https://formsubmit.io/send/0d1e0071-7b03-4783-b3e4-2d9f6b5e76fb" method="POST">
+              <input name="_formsubmit_id" type="text" style="display:none">
+              <input name="_redirect" type="hidden" id="name" value="https://www.apple.com">
               <div class="control-group">
                 <div
                   class="form-group floating-label-form-group controls mb-0 pb-2"
@@ -244,7 +246,8 @@
                   <label>Name</label>
                   <input
                     class="form-control"
-                    id="name"
+                    name="name"
+                    id="names"
                     type="text"
                     placeholder="Name"
                     required="required"
@@ -260,6 +263,7 @@
                   <label>Email Address</label>
                   <input
                     class="form-control"
+                    name="email"
                     id="email"
                     type="email"
                     placeholder="Email Address"
@@ -276,6 +280,7 @@
                   <label>Phone Number</label>
                   <input
                     class="form-control"
+                    name="phone"
                     id="phone"
                     type="tel"
                     placeholder="Phone Number"
@@ -292,6 +297,7 @@
                   <label>Message</label>
                   <textarea
                     class="form-control"
+                    name="message"
                     id="message"
                     rows="5"
                     placeholder="Message"
@@ -349,13 +355,8 @@
           </div>
           <!-- Footer About Text-->
           <div class="col-lg-4">
-            <h4 class="text-uppercase mb-4">About Freelancer</h4>
-            <p class="lead mb-0">
-              Freelance is a free to use, MIT licensed Bootstrap theme created
-              by
-              <a href="http://startbootstrap.com">Start Bootstrap</a>
-              .
-            </p>
+            <h4 class="text-uppercase mb-4">About PushAfrik</h4>
+            <p class="lead mb-0">Push Afrik is a non profit established in 2020.</p>
           </div>
         </div>
       </div>
