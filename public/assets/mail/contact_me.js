@@ -53,7 +53,7 @@ $(function () {
         setTimeout(function () {
           $this.prop("disabled", false); // Re-enable submit button when AJAX call is complete
           $("#sendMessageButton").html("Send");
-        }, 1000);
+        }, 500);
       });
     },
     filter: function () {
