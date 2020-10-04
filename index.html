@@ -28,7 +28,7 @@
       type="text/css"
     />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="public/assets/css/styles.css" rel="stylesheet" />
   </head>
   <body id="page-top">
     <!-- Navigation-->
@@ -85,7 +85,7 @@
         <!-- Masthead Avatar Image-->
         <img
           class="masthead-avatar mb-5"
-          src="assets/img/portfolio/submarine.png"
+          src="public/assets/img/portfolio/submarine.png"
           alt=""
         />
         <!-- Masthead Heading-->
@@ -235,9 +235,10 @@
         <!-- Contact Section Form-->
         <div class="row">
           <div class="col-lg-8 mx-auto">
+            <br />
+            <div id="success"></div>
             <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
-            <form id="contactForm" action="https://formsubmit.io/send/0d1e0071-7b03-4783-b3e4-2d9f6b5e76fb" method="POST">
-              <input name="_formsubmit_id" type="text" style="display:none">
+            <form id="contactForm" name="sentMessage" novalidate="novalidate">
               <div class="control-group">
                 <div
                   class="form-group floating-label-form-group controls mb-0 pb-2"
@@ -246,7 +247,7 @@
                   <input
                     class="form-control"
                     name="name"
-                    id="names"
+                    id="name"
                     type="text"
                     placeholder="Name"
                     required="required"
@@ -289,7 +290,7 @@
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
-              <div class="control-group">
+              <div class="control-group mb-2">
                 <div
                   class="form-group floating-label-form-group controls mb-0 pb-2"
                 >
@@ -306,8 +307,7 @@
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
-              <br />
-              <div id="success"></div>
+
               <div class="form-group">
                 <button
                   class="btn btn-secondary btn-xl"
@@ -355,7 +355,7 @@
           <!-- Footer About Text-->
           <div class="col-lg-4">
             <h4 class="text-uppercase mb-4">About PushAfrik</h4>
-            <p class="lead mb-0">Push Afrik is a non profit established in 2020.</p>
+            <p class="lead mb-0">Push Afrik is a non profit organisation established in 2020.</p>
           </div>
         </div>
       </div>
@@ -414,7 +414,7 @@
                   <!-- Portfolio Modal - Image-->
                   <img
                     class="img-fluid rounded mb-5"
-                    src="assets/img/portfolio/cabin.png"
+                    src="public/assets/img/portfolio/cabin.png"
                     alt=""
                   />
                   <!-- Portfolio Modal - Text-->
@@ -477,7 +477,7 @@
                   <!-- Portfolio Modal - Image-->
                   <img
                     class="img-fluid rounded mb-5"
-                    src="assets/img/portfolio/cake.png"
+                    src="public/assets/img/portfolio/cake.png"
                     alt=""
                   />
                   <!-- Portfolio Modal - Text-->
@@ -540,7 +540,7 @@
                   <!-- Portfolio Modal - Image-->
                   <img
                     class="img-fluid rounded mb-5"
-                    src="assets/img/portfolio/circus.png"
+                    src="public/assets/img/portfolio/circus.png"
                     alt=""
                   />
                   <!-- Portfolio Modal - Text-->
@@ -603,7 +603,7 @@
                   <!-- Portfolio Modal - Image-->
                   <img
                     class="img-fluid rounded mb-5"
-                    src="assets/img/portfolio/game.png"
+                    src="public/assets/img/portfolio/game.png"
                     alt=""
                   />
                   <!-- Portfolio Modal - Text-->
@@ -666,7 +666,7 @@
                   <!-- Portfolio Modal - Image-->
                   <img
                     class="img-fluid rounded mb-5"
-                    src="assets/img/portfolio/safe.png"
+                    src="public/assets/img/portfolio/safe.png"
                     alt=""
                   />
                   <!-- Portfolio Modal - Text-->
@@ -729,7 +729,7 @@
                   <!-- Portfolio Modal - Image-->
                   <img
                     class="img-fluid rounded mb-5"
-                    src="assets/img/portfolio/submarine.png"
+                    src="public/assets/img/portfolio/submarine.png"
                     alt=""
                   />
                   <!-- Portfolio Modal - Text-->
@@ -757,9 +757,9 @@
     <!-- Third party plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Contact form JS-->
-    <script src="assets/mail/jqBootstrapValidation.js"></script>
-    <script src="assets/mail/contact_me.js"></script>
+    <script src="public/assets/mail/jqBootstrapValidation.js"></script>
+    <script src="public/assets/mail/contact_me.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script src="public/assets/js/scripts.js"></script>
   </body>
 </html>
