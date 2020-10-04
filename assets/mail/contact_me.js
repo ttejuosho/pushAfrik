@@ -106,7 +106,7 @@ $("#name").focus(function () {
 $(function () {
   $this = $("#sendMessageButton");
   $this.click(() => {
-    $("#contactForm").submit();
+    //$("#contactForm").submit();
     $("#contactForm").on("submit", () => {
       $("#success").html("<div class='alert alert-success'>");
       $("#success > .alert-success")
